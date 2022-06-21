@@ -14,6 +14,7 @@ I'm generally do some kind of development on a daily basis which is just in the 
 > [Mermaid](https://mermaid-js.github.io/mermaid/#/README) lets you create diagrams and visualizations using text and code.
 > It is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.
 
+[GitHubs Docs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)
 
 ```mermaid
 flowchart TB
