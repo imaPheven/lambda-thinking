@@ -1,4 +1,4 @@
-# $\lambda$ lambda-thinking
+# - $\lambda$ lambda-thinking
 Journal, tutorials and more
 
 ## Daily Commits
