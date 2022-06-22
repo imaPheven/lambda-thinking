@@ -30,3 +30,4 @@ flowchart TB
     B --> D
 ```
 
+[Semantic Versioning](https://semver.org)
