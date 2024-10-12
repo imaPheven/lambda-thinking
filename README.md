@@ -34,4 +34,4 @@ flowchart TB
 
 ## Algorithms
 - Sorting
-    - [Heap Sort](https://github.com/imaPheven/lambda-thinking/blob/5363177669953a1f06ddca119871bd683d1f5456/algorithms/heapSort.md)
+    - [Heap Sort](./algorithms/heapSort.md)
