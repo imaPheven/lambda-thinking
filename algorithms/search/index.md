@@ -24,6 +24,8 @@
 - **n**: Number of elements in the dataset
 
 
+[Back to top](#)
+
 ## 1. **Linear Search**
 - **Description**: Searches each element of a list sequentially until a match is found.
 - **Time Complexity**: 
@@ -32,6 +34,8 @@
 - **Space Complexity**: $O(1)$
 - **Pros**: Simple, works on unsorted data.
 - **Cons**: Inefficient for large datasets.
+
+[Back to top](#)
 
 ## 2. **Binary Search**
 - **Description**: Efficient search algorithm that works on sorted arrays by repeatedly dividing the search interval in half.
@@ -42,6 +46,8 @@
 - **Pros**: Very efficient for large, sorted datasets.
 - **Cons**: Requires data to be sorted.
 
+[Back to top](#)
+
 ## 3. **Jump Search**
 - **Description**: Searches in sorted arrays by jumping ahead by a fixed step size and then performing a linear search in the block where the element is located.
 - **Time Complexity**: 
@@ -50,6 +56,8 @@
 - **Space Complexity**: $O(1)$
 - **Pros**: Optimized for larger datasets compared to linear search.
 - **Cons**: Less efficient than binary search on the same dataset.
+
+[Back to top](#)
 
 ## 4. **Exponential Search**
 - **Description**: Finds range where an element may exist, and then uses binary search to find the element within the range.
@@ -71,12 +79,16 @@
 - **Pros**: Efficient with uniformly distributed data.
 - **Cons**: Can perform poorly on non-uniform data.
 
+[Back to top](#)
+
 ## 6. **Depth-First Search (DFS)**
 - **Description**: Explores as far as possible along a branch before backtracking.
 - **Time Complexity**: $O(V + E)$, where V is the number of vertices and E is the number of edges.
 - **Space Complexity**: $O(V)$
 - **Pros**: Memory efficient for wide graphs, finds deeper solutions faster.
 - **Cons**: Can get stuck in deep branches, may miss shallow solutions.
+
+[Back to top](#)
 
 ## 7. **Breadth-First Search (BFS)**
 - **Description**: Explores all nodes at the present depth before moving to nodes at the next depth level.
@@ -94,6 +106,8 @@
 - **Pros**: Finds optimal path efficiently with good heuristics.
 - **Cons**: Depends heavily on the quality of the heuristic.
 
+[Back to top](#)
+
 ## 9. **Uniform-Cost Search (UCS)**
 - **Description**: A variant of BFS where the lowest cost node is expanded first.
 - **Time Complexity**: $O(V + E)$
@@ -101,12 +115,16 @@
 - **Pros**: Guarantees the shortest path in weighted graphs.
 - **Cons**: Can be slow in large graphs with high branching factors.
 
+[Back to top](#)
+
 ## 10. **Greedy Best-First Search**
 - **Description**: Expands the node that is closest to the goal (according to the heuristic).
 - **Time Complexity**: $O(E)$, where E is the number of edges.
 - **Space Complexity**: $O(V)$
 - **Pros**: Faster than A* in some cases.
 - **Cons**: Not optimal, may lead to suboptimal solutions.
+
+[Back to top](#)
 
 ---
 
