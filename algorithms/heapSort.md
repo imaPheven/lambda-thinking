@@ -1,5 +1,7 @@
 # Heap Sort
 
+[Back to index](https://github.com/imaPheven/lambda-thinking/blob/47353712bf0cb53ba09ebbbd03b3e837dac7742e/README.md)
+
 ## Summary
 Heap sort is a comparison-based sorting algorithm that uses a binary heap data structure to sort elements. It organizes the elements into a max heap (or min heap) and then repeatedly extracts the largest (or smallest) element, placing it in the correct sorted position. The algorithm works in-place and has a time complexity of **O(n log n)**.
 
@@ -105,3 +107,5 @@ In array form, the binary heap is stored as: `[10, 5, 3, 4, 1]`.
 
 ## Final Sorted Array
 `[1, 3, 4, 5, 10]`
+
+[Back to top](#heap-sort)
