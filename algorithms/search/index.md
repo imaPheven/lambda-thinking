@@ -60,6 +60,8 @@
 - **Pros**: Efficient when the element is near the start of the array.
 - **Cons**: Requires sorted data.
 
+[Back to top](#)
+
 ## 5. **Interpolation Search**
 - **Description**: A search algorithm that assumes the elements are uniformly distributed and uses this information to probe the position.
 - **Time Complexity**: 
@@ -82,6 +84,8 @@
 - **Space Complexity**: $O(V)$
 - **Pros**: Finds shortest path in unweighted graphs, complete and optimal for finite graphs.
 - **Cons**: High memory usage, especially for wide graphs.
+
+[Back to top](#)
 
 ## 8. **A* Search**
 - **Description**: An informed search algorithm that uses a heuristic to find the shortest path.
@@ -110,3 +114,5 @@
 - **V**: Number of vertices (nodes)
 - **E**: Number of edges
 - **n**: Number of elements in the dataset
+
+[Back to top](#)
