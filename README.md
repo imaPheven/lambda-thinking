@@ -31,3 +31,7 @@ flowchart TB
 ```
 
 [Semantic Versioning](https://semver.org)
+
+## Algorithms
+- Sorting
+    - [Heap Sort](https://github.com/imaPheven/lambda-thinking/blob/5363177669953a1f06ddca119871bd683d1f5456/algorithms/heapSort.md)
