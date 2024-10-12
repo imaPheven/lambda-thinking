@@ -13,7 +13,7 @@
 | [**Interpolation Search**](#5-interpolation-search) | O(1)               | O(n)                   | O(1)             | Efficient with uniformly distributed data     | Performs poorly with non-uniform data             |
 | [**DFS (Depth-First Search)**](#6-depth-first-search-dfs) | O(V + E)          | O(V + E)               | O(V)             | Memory efficient, finds deeper solutions     | Can get stuck in deep branches                    |
 | [**BFS (Breadth-First Search)**](#7-breadth-first-search-bfs) | O(V + E)        | O(V + E)               | O(V)             | Finds shortest path in unweighted graphs      | High memory usage for wide graphs                 |
-| [**A* Search**](#8-a-search)                    | O(E)                   | O(E)                   | O(V)             | Efficient with good heuristics                | Heavily depends on the quality of the heuristic    |
+| [**A\* Search**](#8-a-search)                    | O(E)                   | O(E)                   | O(V)             | Efficient with good heuristics                | Heavily depends on the quality of the heuristic    |
 | [**UCS (Uniform-Cost Search)**](#9-uniform-cost-search) | O(V + E)           | O(V + E)               | O(V)             | Guarantees shortest path in weighted graphs   | Can be slow in large graphs                       |
 | [**Greedy Best-First Search**](#10-greedy-best-first-search) | O(E)             | O(E)                   | O(V)             | Faster in some cases                         | Not optimal, may lead to suboptimal solutions      |
 
