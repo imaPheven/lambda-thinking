@@ -34,4 +34,4 @@ flowchart TB
 
 ## Algorithms
 - Sorting
-    - [Heap Sort](./algorithms/heapSort.md)
+    - [Heap Sort](./algorithms/sort/heapSort.md)
