@@ -35,3 +35,5 @@ flowchart TB
 ## Algorithms
 - Sorting
     - [Heap Sort](./algorithms/sort/heapSort.md)
+- Search
+    - [Summary](./algorithms/search/index.md)

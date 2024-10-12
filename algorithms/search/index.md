@@ -1,5 +1,7 @@
 # Search Algorithms Cheatsheet
 
+[Back to index](../../README.md)
+
 # Search Algorithms Summary Table
 
 | Algorithm                         | Time Complexity (Best) | Time Complexity (Worst) | Space Complexity | Pros                                         | Cons                                               |
