@@ -2,7 +2,7 @@
 
 [Back to index](../../README.md)
 
-# Search Algorithms Summary Table
+## Search Algorithms Summary Table
 
 | Algorithm                         | Code Example | Time Complexity (Best) | Time Complexity (Worst) | Space Complexity | Pros                                         | Cons                                               |
 |--------------------------------- | ---|------------------------|-------------------------|------------------|----------------------------------------------|----------------------------------------------------|
@@ -24,7 +24,7 @@
 - **n**: Number of elements in the dataset
 
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 1. **Linear Search**
 
@@ -38,7 +38,7 @@
 - **Pros**: Simple, works on unsorted data.
 - **Cons**: Inefficient for large datasets.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 2. **Binary Search**
 
@@ -52,7 +52,7 @@
 - **Pros**: Very efficient for large, sorted datasets.
 - **Cons**: Requires data to be sorted.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 3. **Jump Search**
 
@@ -66,7 +66,7 @@
 - **Pros**: Optimized for larger datasets compared to linear search.
 - **Cons**: Less efficient than binary search on the same dataset.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 4. **Exponential Search**
 
@@ -82,7 +82,7 @@
 - **Pros**: Efficient when the element is near the start of the array.
 - **Cons**: Requires sorted data.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 5. **Interpolation Search**
 - **Description**: A search algorithm that assumes the elements are uniformly distributed and uses this information to probe the position.
@@ -93,7 +93,7 @@
 - **Pros**: Efficient with uniformly distributed data.
 - **Cons**: Can perform poorly on non-uniform data.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 6. **Depth-First Search (DFS)**
 - **Description**: Explores as far as possible along a branch before backtracking.
@@ -102,7 +102,7 @@
 - **Pros**: Memory efficient for wide graphs, finds deeper solutions faster.
 - **Cons**: Can get stuck in deep branches, may miss shallow solutions.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 7. **Breadth-First Search (BFS)**
 - **Description**: Explores all nodes at the present depth before moving to nodes at the next depth level.
@@ -111,7 +111,7 @@
 - **Pros**: Finds shortest path in unweighted graphs, complete and optimal for finite graphs.
 - **Cons**: High memory usage, especially for wide graphs.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 8. **A* Search**
 - **Description**: An informed search algorithm that uses a heuristic to find the shortest path.
@@ -120,7 +120,7 @@
 - **Pros**: Finds optimal path efficiently with good heuristics.
 - **Cons**: Depends heavily on the quality of the heuristic.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 9. **Uniform-Cost Search (UCS)**
 - **Description**: A variant of BFS where the lowest cost node is expanded first.
@@ -129,7 +129,7 @@
 - **Pros**: Guarantees the shortest path in weighted graphs.
 - **Cons**: Can be slow in large graphs with high branching factors.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ## 10. **Greedy Best-First Search**
 - **Description**: Expands the node that is closest to the goal (according to the heuristic).
@@ -138,7 +138,7 @@
 - **Pros**: Faster than A* in some cases.
 - **Cons**: Not optimal, may lead to suboptimal solutions.
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)
 
 ---
 
@@ -147,4 +147,4 @@
 - **E**: Number of edges
 - **n**: Number of elements in the dataset
 
-[Back to top](#)
+[:top:](#search-algorithms-summary-table)

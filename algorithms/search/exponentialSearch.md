@@ -1,7 +1,13 @@
-[Back to: Search Algorithms :arrow_heading_up:](./index.md#search-algorithms-cheatsheet)
+[Back to: Search Algorithms :arrow_heading_up:](./index.md#4-exponential-search)
 
 # Exponential Search
 
+#### TOC
+- [Summary](#summary)
+- [Code Example Javascript](#code-example)
+- [Compare vs Binary Search](#compare-vs-binary-search)
+
+## Summary
 - **Description**: Finds range where an element may exist, and then uses binary search to find the element within the range.
 - **Time Complexity**: 
   - Best: $O(1)$
@@ -10,9 +16,9 @@
 - **Pros**: Efficient when the element is near the start of the array.
 - **Cons**: Requires sorted data.
 
-[Compare vs Binary Search :arrow_down:](#compare-vs-binary-search)
-
 ## Code Example:
+
+[:top:](#)
 
 [Back to: Search Algorithms - Exponential Search :arrow_heading_up:](./index.md#4-exponential-search)
 
@@ -72,8 +78,10 @@ console.log(result !== -1 ? `Element found at index ${result}` : "Element not fo
 1. **Binary Search**: This helper function performs a binary search on a given sub-array.
 2. **Exponential Search**: This function searches for a target by first finding an exponential range where the target might be and then applying binary search within that range.
 
-
 ## Compare vs Binary Search
+
+[:top:](#)
+
 Exponential Search has several advantages over directly using Binary Search, particularly when dealing with unbounded or large sorted arrays:
 
 ### 1. **Unbounded or Infinite Arrays**:
@@ -100,3 +108,5 @@ Exponential Search has several advantages over directly using Binary Search, par
 - **Binary Search** remains efficient for scenarios where the size of the array is known and fixed. 
 
 In summary, **Exponential Search** is more adaptive when the size of the array is unknown or when the target is expected to be closer to the start, while **Binary Search** is efficient for static, well-defined arrays.
+
+[:top:](#)
