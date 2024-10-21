@@ -55,6 +55,9 @@
 [Back to top](#)
 
 ## 3. **Jump Search**
+
+[Code Example :arrow_heading_down:](./jumpSearch.md#code-example)
+
 - **Description**: Searches in sorted arrays by jumping ahead by a fixed step size and then performing a linear search in the block where the element is located.
 - **Time Complexity**: 
   - Best: $O(\sqrt n)$
