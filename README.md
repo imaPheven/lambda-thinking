@@ -2,10 +2,16 @@
 Journal, tutorials and more
 
 ## Algorithms
-- Sorting
-    - [Heap Sort](./algorithms/sort/heapSort.md)
+
 - Search
     - [Summary](./algorithms/search/index.md)
+        - [Linear Search](./algorithms/search/linearSearch.md) :new:
+        - [Jump Search](./algorithms/search/jumpSearch.md) :new:
+        - [Binary Search](./algorithms/search/binarySearch.md) :new:
+        - [Exponential Search](./algorithms/search/exponentialSearch.md) :new:
+
+- Sorting
+    - [Heap Sort](./algorithms/sort/heapSort.md)
 
 ## Test Driven Development  :new:
 - [Intro](./test-driven-development/index.md)
