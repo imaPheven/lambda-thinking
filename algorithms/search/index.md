@@ -27,6 +27,9 @@
 [Back to top](#)
 
 ## 1. **Linear Search**
+
+[Code Example :arrow_heading_down:](./linearSearch.md#code-example)
+
 - **Description**: Searches each element of a list sequentially until a match is found.
 - **Time Complexity**: 
   - Best: $O(1)$
@@ -38,6 +41,9 @@
 [Back to top](#)
 
 ## 2. **Binary Search**
+
+[Code Example :arrow_heading_down:](./binarySearch.md#code-example)
+
 - **Description**: Efficient search algorithm that works on sorted arrays by repeatedly dividing the search interval in half.
 - **Time Complexity**: 
   - Best: $O(1)$
