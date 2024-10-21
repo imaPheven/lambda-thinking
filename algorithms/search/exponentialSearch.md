@@ -1,6 +1,6 @@
 [Back to: Search Algorithms :arrow_heading_up:](./index.md#search-algorithms-cheatsheet)
 
-## Exponential Search
+# Exponential Search
 
 - **Description**: Finds range where an element may exist, and then uses binary search to find the element within the range.
 - **Time Complexity**: 

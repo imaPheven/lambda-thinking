@@ -1,6 +1,6 @@
 [Back to: Search Algorithms :arrow_heading_up:](./index.md#search-algorithms-cheatsheet)
 
-## Binary Search
+# Binary Search
 
 - **Description**: Efficient search algorithm that works on sorted arrays by repeatedly dividing the search interval in half.
 - **Time Complexity**: 
@@ -11,7 +11,7 @@
 - **Cons**: Requires data to be sorted.
 
 
-### Code Example:
+## Code Example:
 
 [Back to: Search Algorithms - Binary Search :arrow_heading_up:](./index.md#2-binary-search)
 

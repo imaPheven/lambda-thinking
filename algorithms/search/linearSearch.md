@@ -10,7 +10,7 @@
 - **Pros**: Simple, works on unsorted data.
 - **Cons**: Inefficient for large datasets.
 
-### Code Example:
+## Code Example:
 [Back to: Search Algorithms](./index.md#1-linear-search)
 
 ``` Javascript

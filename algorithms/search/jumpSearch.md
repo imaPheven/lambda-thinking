@@ -1,6 +1,6 @@
 [Back to: Search Algorithms :arrow_heading_up:](./index.md#search-algorithms-cheatsheet)
 
-## Jump Search
+# Jump Search
 
 - **Description**: Searches in sorted arrays by jumping ahead by a fixed step size and then performing a linear search in the block where the element is located.
 - **Time Complexity**: 
@@ -11,7 +11,7 @@
 - **Cons**: Less efficient than binary search on the same dataset.
 
 
-### Code Example:
+## Code Example:
 
 [Back to: Search Algorithms - Jump Search :arrow_heading_up:](./index.md#3-jump-search)
 
