@@ -85,6 +85,9 @@
 [:top:](#search-algorithms-summary-table)
 
 ## 5. **Interpolation Search**
+
+[Code Example :arrow_heading_down:](./interpolationSearch.md#code-example)
+
 - **Description**: A search algorithm that assumes the elements are uniformly distributed and uses this information to probe the position.
 - **Time Complexity**: 
   - Best: $O(1)$

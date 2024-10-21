@@ -104,9 +104,49 @@ function exponentialSearch(arr, target) {
   return binarySearch(arr, target, Math.floor(i / 2), Math.min(i, n - 1));
 }
 
+/**
+ * Performs an interpolation search on a sorted array.
+ * 
+ * Interpolation search is an improvement over binary search for instances where the values
+ * in a sorted array are uniformly distributed. It uses the position formula to estimate
+ * the location of the target element in the array.
+ *
+ * @param {number[]} arr - The sorted array of numbers.
+ * @param {number} target - The target number to search for.
+ * @return {number} The index of the target element in the array, or -1 if not found.
+ */
+function interpolationSearch(arr, target) {
+  let low = 0;
+  let high = arr.length - 1;
+
+  while (low <= high && target >= arr[low] && target <= arr[high]) {
+      // If the array is uniform, interpolation formula is used to estimate the position
+      let pos = low + Math.floor(((target - arr[low]) * (high - low)) / (arr[high] - arr[low]));
+
+      // Check if we found the target at the estimated position
+      if (arr[pos] === target) {
+          return pos;
+      }
+
+      // If the target is larger, search the right subarray
+      if (arr[pos] < target) {
+          low = pos + 1;
+      } 
+      // If the target is smaller, search the left subarray
+      else {
+          high = pos - 1;
+      }
+  }
+
+  // If the target is not found, return -1
+  return -1;
+}
+
+
 module.exports = {
   linearSearch,
   jumpSearch,
   binarySearch,
-  exponentialSearch
+  exponentialSearch,
+  interpolationSearch
 }
