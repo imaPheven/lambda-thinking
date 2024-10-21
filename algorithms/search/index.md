@@ -72,6 +72,8 @@
 
 [Code Example :arrow_heading_down:](./exponentialSearch.md#code-example)
 
+[Compare vs Binary Search :arrow_heading_down:](./exponentialSearch.md#compare-vs-binary-search)
+
 - **Description**: Finds range where an element may exist, and then uses binary search to find the element within the range.
 - **Time Complexity**: 
   - Best: $O(1)$
