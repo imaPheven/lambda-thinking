@@ -14,6 +14,13 @@
 [Back to: Search Algorithms](./index.md#1-linear-search)
 
 ``` Javascript
+/**
+ * Performs a linear search on an array to find the target value.
+ *
+ * @param {Array} arr - The array to search through.
+ * @param {*} target - The value to search for in the array.
+ * @returns {number} The index of the target if found, otherwise -1.
+ */
 function linearSearch(arr, target) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === target) {
@@ -33,5 +40,4 @@ if (result !== -1) {
 } else {
     console.log('Element not found');
 }
-
 ```

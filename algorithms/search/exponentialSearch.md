@@ -23,31 +23,39 @@
 [Back to: Search Algorithms - Exponential Search :arrow_heading_up:](./index.md#4-exponential-search)
 
 ``` javascript
-// Helper function to perform binary search
-function binarySearch(arr, left, right, target) {
+/**
+ * Performs binary search on a sorted array or a subarray if left and right bounds are provided.
+ * 
+ * @param {Array} arr - The sorted array to search in.
+ * @param {number} target - The target value to search for.
+ * @param {number} [left=0] - The optional starting index of the subarray.
+ * @param {number} [right=arr.length - 1] - The optional ending index of the subarray.
+ * @returns {number} - The index of the target if found, otherwise -1.
+ */
+function binarySearch(arr, target, left = 0, right = arr.length - 1) {
     while (left <= right) {
-        let mid = Math.floor((left + right) / 2);
+        const middle = Math.floor((left + right) / 2);
 
-        // Check if target is at mid
-        if (arr[mid] === target) {
-            return mid;
-        }
-
-        // If target is greater, ignore left half
-        if (arr[mid] < target) {
-            left = mid + 1;
-        } 
-        // If target is smaller, ignore right half
-        else {
-            right = mid - 1;
+        if (arr[middle] === target) {
+            return middle; // Target found, return its index
+        } else if (arr[middle] < target) {
+            left = middle + 1; // Target is in the right half
+        } else {
+            right = middle - 1; // Target is in the left half
         }
     }
-    
-    // Return -1 if target is not found
-    return -1;
+
+    return -1; // Target not found
 }
 
-// Exponential search function
+/**
+ * Performs exponential search on a sorted array to find the target value.
+ * It first finds the range where the target might be and then applies binary search.
+ * 
+ * @param {Array} arr - The sorted array to search in.
+ * @param {number} target - The target value to search for.
+ * @returns {number} - The index of the target if found, otherwise -1.
+ */
 function exponentialSearch(arr, target) {
     const n = arr.length;
 
@@ -63,7 +71,7 @@ function exponentialSearch(arr, target) {
     }
 
     // Perform binary search in the found range
-    return binarySearch(arr, Math.floor(i / 2), Math.min(i, n - 1), target);
+    return binarySearch(arr, target, Math.floor(i / 2), Math.min(i, n - 1));
 }
 
 // Example usage

@@ -16,6 +16,15 @@
 [Back to: Search Algorithms - Jump Search :arrow_heading_up:](./index.md#3-jump-search)
 
 ``` Javascript
+/**
+ * Performs Jump Search on a sorted array to find the target element.
+ * Jump Search works by dividing the array into blocks of size √n and searching
+ * through those blocks before performing a linear search within the identified block.
+ * 
+ * @param {number[]} arr - The sorted array to search through.
+ * @param {number} target - The element to search for in the array.
+ * @returns {number} - The index of the target element in the array, or -1 if not found.
+ */
 function jumpSearch(arr, target) {
   let length = arr.length;
   let step = Math.floor(Math.sqrt(length));
@@ -49,6 +58,10 @@ function jumpSearch(arr, target) {
 // Example usage:
 let arr = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
 let target = 11;
+
+/**
+ * Executes the jumpSearch function and logs the result.
+ */
 let index = jumpSearch(arr, target);
 
 if (index !== -1) {
@@ -56,5 +69,4 @@ if (index !== -1) {
 } else {
   console.log('Element not found in the array.');
 }
-
 ```
