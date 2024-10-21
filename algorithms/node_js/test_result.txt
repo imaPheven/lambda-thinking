@@ -1,0 +1,36 @@
+ PASS  ./search.test.js
+  linearSearch
+    ✓ should return the correct index when target is found (3 ms)
+    ✓ should return -1 when target is not found
+    ✓ should handle empty arrays
+    ✓ should handle arrays of different types (1 ms)
+    ✓ should work with large dataset (60 ms)
+  jumpSearch
+    ✓ should return the correct index when target is found
+    ✓ should return -1 when target is not found
+    ✓ should handle empty arrays (1 ms)
+    ✓ should handle arrays of different types (1 ms)
+    ✓ should work with large dataset (2 ms)
+  binarySearch
+    ✓ should return the correct index when target is found (1 ms)
+    ✓ should return -1 when target is not found (1 ms)
+    ✓ should handle empty arrays
+    ✓ should handle arrays of different types
+    ✓ should work with large dataset (1 ms)
+  exponentialSearch
+    ✓ should return the correct index when target is found
+    ✓ should return -1 when target is not found (1 ms)
+    ✓ should handle empty arrays
+    ✓ should handle arrays of different types (1 ms)
+    ✓ should work with large dataset
+    Exponential Search on Unbounded Arrays
+      ✓ should find the target in a simulated large unbounded array
+      ✓ should return -1 for a target not in the simulated large unbounded array (1 ms)
+      ✓ should handle target at the start of the unbounded array
+      ✓ should handle target near the end of the unbounded array
+
+Test Suites: 1 passed, 1 total
+Tests:       24 passed, 24 total
+Snapshots:   0 total
+Time:        1.571 s, estimated 2 s
+Ran all test suites.
