@@ -4,8 +4,8 @@ date: 2024-10-19T06:02:53.848Z
 prompt: what are some of the top node.js testing scripts. Rate top as equally weighted between rating type of "battle tested" or "up and comer".  Start with table of frameworks with headings "framework name", "rating type". Follow up with a description of each framework
 ---
 
-- [Main Index](../README.md)
-- [Test Driven Development Index](index.md)
+- [Main Index](/README.md)
+- [Test Driven Development Index](./index.md)
 
 # Top Node.js testing frameworks
 

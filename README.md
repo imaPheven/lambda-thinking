@@ -4,18 +4,21 @@ Journal, tutorials and more
 ## Algorithms
 
 - Search
-    - [Summary](./algorithms/search/index.md)
-        - [Linear Search](./algorithms/search/linearSearch.md) :new:
-        - [Jump Search](./algorithms/search/jumpSearch.md) :new:
-        - [Binary Search](./algorithms/search/binarySearch.md) :new:
-        - [Exponential Search](./algorithms/search/exponentialSearch.md) :new:
+    - [Summary](./docs/algorithms/search/index.md)
+        - [Linear Search](./docs/algorithms/search/linearSearch.md) :new:
+        - [Jump Search](./docs/algorithms/search/jumpSearch.md) :new:
+        - [Binary Search](./docs/algorithms/search/binarySearch.md) :new:
+        - [Exponential Search](./docs/algorithms/search/exponentialSearch.md) :new:
 
 - Sorting
-    - [Heap Sort](./algorithms/sort/heapSort.md)
+    - [Heap Sort](./docs/algorithms/sort/heapSort.md)
 
 ## Test Driven Development  :new:
-- [Intro](./test-driven-development/index.md)
-    - [Top Node.js testing frameworks](./test-driven-development/TopNodejsTestingFrameworks.md) :new:
+- [Intro](./docs/test-driven-development/index.md)
+    - [Top Node.js testing frameworks](./docs/test-driven-development/TopNodejsTestingFrameworks.md) :new:
+
+## Big O Notation
+- [Summary](./docs/bigONotation.md)
 
 ## Daily Commits
 I'm generally do some kind of development on a daily basis which is just in the spirit of learning new technologies or ideas. I am really bad at making daily commits on these activities and so I am going to try a challenge of committing code and pushing up for others to see.

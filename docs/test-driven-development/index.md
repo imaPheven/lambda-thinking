@@ -1,4 +1,4 @@
-[Main Index](../README.md)
+[Main Index](/README.md)
 
 # Test Driven Development
 

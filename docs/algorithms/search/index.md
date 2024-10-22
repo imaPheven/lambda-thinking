@@ -1,6 +1,6 @@
 # Search Algorithms Cheatsheet
 
-[Back to index](../../README.md)
+[Back to index](/README.md)
 
 ## Search Algorithms Summary Table
 

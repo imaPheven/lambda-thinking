@@ -1,6 +1,6 @@
 # Heap Sort
 
-[Back to index](../../README.md)
+[Back to index](/README.md)
 
 ## Summary
 Heap sort is a comparison-based sorting algorithm that uses a binary heap data structure to sort elements. It organizes the elements into a max heap (or min heap) and then repeatedly extracts the largest (or smallest) element, placing it in the correct sorted position. The algorithm works in-place and has a time complexity of **O(n log n)**.
