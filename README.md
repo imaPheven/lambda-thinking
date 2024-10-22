@@ -5,17 +5,17 @@ Journal, tutorials and more
 
 - Search
     - [Summary](./docs/algorithms/search/index.md)
-        - [Linear Search](./docs/algorithms/search/linearSearch.md) :new:
-        - [Jump Search](./docs/algorithms/search/jumpSearch.md) :new:
-        - [Binary Search](./docs/algorithms/search/binarySearch.md) :new:
-        - [Exponential Search](./docs/algorithms/search/exponentialSearch.md) :new:
+        - [Linear Search](./docs/algorithms/search/linearSearch.md) :sparkles:
+        - [Jump Search](./docs/algorithms/search/jumpSearch.md) :sparkles:
+        - [Binary Search](./docs/algorithms/search/binarySearch.md) :sparkles:
+        - [Exponential Search](./docs/algorithms/search/exponentialSearch.md) :sparkles:
 
 - Sorting
     - [Heap Sort](./docs/algorithms/sort/heapSort.md)
 
-## Test Driven Development  :new:
+## Test Driven Development  :sparkles:
 - [Intro](./docs/test-driven-development/index.md)
-    - [Top Node.js testing frameworks](./docs/test-driven-development/TopNodejsTestingFrameworks.md) :new:
+    - [Top Node.js testing frameworks](./docs/test-driven-development/TopNodejsTestingFrameworks.md) :sparkles:
 
 ## Big O Notation
 - [Summary](./docs/bigONotation.md)
@@ -32,8 +32,13 @@ Moving forward to use [conventional commits](https://www.conventionalcommits.org
 ### Markdown Cheet Sheets
 - [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) :grinning:
 - [Github: Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
-This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+This sentence uses `$` delimiters to show math inline:  
+``` markdown
+$\sqrt{3x-1}+(1+x)^2$
+```
+Produces:
 
+$\sqrt{3x-1}+(1+x)^2$
 ### Using charts in documentation
 
 > [Mermaid](https://mermaid-js.github.io/mermaid/#/README) lets you create diagrams and visualizations using text and code.

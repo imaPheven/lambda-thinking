@@ -8,27 +8,29 @@ Big O notation describes the time complexity of an algorithm, indicating how its
 
 | Notation      | Name                                                               | Description                                    | Example Algorithm       |
 |-------------  |--------------------------------------------------------------------|------------------------------------------------|-------------------------|
-| O(1)          | [Constant Time](#constant-time---o1)                               | Time remains the same regardless of input size                             | Array access            |
-| O(log n)      | [Logarithmic Time](#logarithmic-time---olog-n)                     | Time grows logarithmically with input size                                 | Binary search           |
-| O(n)          | [Linear Time](#linear-time---on)                                   | Time grows linearly with input size                                        | Traversing an array     |
-| O(n log n)    | [Linearithmic Time](#logarithmic-time---olog-n)                    | Time grows faster than O(n) but slower than O(n^2)                         | Merge sort, quicksort   |
-| O(n^2)        | [Quadratic Time](#quadratic-time---on2)                            | Time grows quadratically with input size                                   | Bubble sort             |
-| O(n^3)        | [Cubic Time](#cubic-time---on3)                                    | Time grows cubically with input size                                       | Triple nested loops     |
-| O(2^n)        | [Exponential Time](#exponential-time---o2n)                        | Time doubles with each additional input                                    | Recursive algorithms    |
-| O(n!)         | [Factorial Time](#factorial-time---on)                             | Time grows factorially with input size                                     | Permutations            |
-| O(n + k)      | [Linear Plus Constant Factor](#linear-plus-constant-time---on--k)  | Time depends on input size \( n \) plus a constant \( k \)                 | Counting Sort           |
-| O(1) Amortized| [Amortized Constant Time](#amortized-time---o1-amortized)          | Rare operations take longer, but average is constant                       | Dynamic Arrays          |
-| O(n^2 / 2)    | [Reduced Quadratic Time](#reduced-quadratic-time---on2--2)         | Similar to \( O(n^2) \), but processes half of comparisons                 | Finding pairs           |
-| O(n + m)      | [Dependent on Two Inputs](#dependent-on-two-inputs---on--m)        | Time depends on two independent factors \( n \) and \( m \)                | Merging sorted arrays   |
-| O(n log k)    | [Logarithmic Search/Insert](#logarithmic-time---olog-n)            | Time grows as the number of operations with \( \log(k) \) inserts/deletes  | Heaps, Priority Queues   |
+| $O(1)$          | [Constant Time](#constant-time---o1)                               | Time remains the same regardless of input size                             | Array access            |
+| $O(\log\,n)$      | [Logarithmic Time](#logarithmic-time---olog-n)                     | Time grows logarithmically with input size                                 | Binary search           |
+| $O(n)$          | [Linear Time](#linear-time---on)                                   | Time grows linearly with input size                                        | Traversing an array     |
+| $O(n \log\,n)$    | [Linearithmic Time](#logarithmic-time---olog-n)                    | Time grows faster than O(n) but slower than O(n^2)                         | Merge sort, quicksort   |
+| $O(n^2)$        | [Quadratic Time](#quadratic-time---on2)                            | Time grows quadratically with input size                                   | Bubble sort             |
+| $O(n^3)$        | [Cubic Time](#cubic-time---on3)                                    | Time grows cubically with input size                                       | Triple nested loops     |
+| $O(2^n)$        | [Exponential Time](#exponential-time---o2n)                        | Time doubles with each additional input                                    | Recursive algorithms    |
+| $O(n!)$         | [Factorial Time](#factorial-time---on)                             | Time grows factorially with input size                                     | Permutations            |
+| $O(n + k)$     | [Linear Plus Constant Factor](#linear-plus-constant-time---on--k)  | Time depends on input size \( n \) plus a constant \( k \)                 | Counting Sort           |
+| $O(1)$ Amortized| [Amortized Constant Time](#amortized-time---o1-amortized)          | Rare operations take longer, but average is constant                       | Dynamic Arrays          |
+| $O(n^2 / 2)$    | [Reduced Quadratic Time](#reduced-quadratic-time---on2--2)         | Similar to \( O(n^2) \), but processes half of comparisons                 | Finding pairs           |
+| $O(n + m)$      | [Dependent on Two Inputs](#dependent-on-two-inputs---on--m)        | Time depends on two independent factors \( n \) and \( m \)                | Merging sorted arrays   |
+| $O(n\,\log\,k)$    | [Logarithmic Search/Insert](#logarithmic-time---olog-n)            | Time grows as the number of operations with \( \log(k) \) inserts/deletes  | Heaps, Priority Queues   |
+
+#### :bookmark: ***Notes on meaning of growth***
 
 When we say "runtime grows" in the context of time complexity, we are referring to how the time an algorithm takes to execute increases as the size of the input (denoted as \( n \)) increases. It does **not** mean that the algorithm goes faster; in fact, it typically means the opposite—**the algorithm gets slower** as the input size increases.
 
 Here’s a breakdown:
 
-- **If the runtime grows slowly (e.g., O(log n)):** The algorithm becomes **slightly slower** as the input size increases, but the increase in time is relatively small compared to the size of \( n \).
+- **If the runtime grows slowly (e.g., $O(\log\,n)$):** The algorithm becomes **slightly slower** as the input size increases, but the increase in time is relatively small compared to the size of \( n \).
   
-- **If the runtime grows quickly (e.g., O(n^2) or O(2^n)):** The algorithm becomes **much slower** as the input size increases, because the time required increases at a much faster rate as \( n \) grows.
+- **If the runtime grows quickly (e.g., $O(n^2)$ or $O(2^n)$):** The algorithm becomes **much slower** as the input size increases, because the time required increases at a much faster rate as \( n \) grows.
 
 In summary, "runtime grows" refers to how the **execution time** of an algorithm changes in relation to the size of the input, and larger input sizes usually lead to longer execution times.
 
@@ -44,6 +46,8 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
     return arr[0]; // O(1)
   }
   ```
+
+[:top:](#summary-table)
 
 ## Logarithmic Time - O(log n)
 - **Description**: The runtime increases logarithmically as the input size grows. Common in divide-and-conquer algorithms.
@@ -62,7 +66,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ## Linear Time - O(n)
 - **Description**: The runtime grows linearly with the size of the input.
@@ -73,7 +77,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
     arr.forEach(el => console.log(el)); // O(n)
   }
   ```
-[:top:](#)
+[:top:](#summary-table)
 
 ## Linearithmic Time - O(n log n)
 - **Description**: The runtime grows faster than linear time but slower than quadratic time. This is common in efficient sorting algorithms.
@@ -88,7 +92,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
     return merge(left, right); // O(n log n)
   }
   ```
-[:top:](#)
+[:top:](#summary-table)
 
 ## Quadratic Time - O(n^2)
 - **Description**: The runtime grows quadratically with the size of the input. Common in algorithms with nested loops.
@@ -107,7 +111,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ## Cubic Time - O(n^3)
 - **Description**: The runtime grows cubically with the size of the input.
@@ -125,7 +129,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ## Exponential Time - O(2^n)
 - **Description**: The runtime doubles with each additional input. Common in brute-force solutions.
@@ -137,7 +141,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
     return fibonacci(n - 1) + fibonacci(n - 2); // O(2^n)
   }
   ```
-[:top:](#)
+[:top:](#summary-table)
 
 ## Factorial Time - O(n!)
 - **Description**: The runtime grows factorially with the size of the input. Common in problems involving permutations.
@@ -158,7 +162,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 
 ## Linear Plus Constant Time - O(n + k)
@@ -186,7 +190,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ## Amortized Time - O(1) (Amortized)
 - **Description**: While some individual operations might take longer, the average time for operations in a sequence is constant. Common in data structures like dynamic arrays and hash tables where resizing or rehashing happens occasionally.
@@ -218,7 +222,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ## Reduced Quadratic Time - O(n^2 / 2)
 - **Description**: Similar to \( O(n^2) \), but the algorithm only processes half of the comparisons, such as when checking pairs in undirected graphs or combinations.
@@ -236,10 +240,10 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ## Pivot Choice in Quick Sort (O(n log n) Best, O(n^2) Worst)
-- **Description**: Quick Sort's performance heavily depends on the choice of the pivot. A poor pivot (e.g., smallest or largest element) can lead to quadratic time complexity, while a good pivot (e.g., middle or random element) results in the average-case \( O(n \log n) \).
+- **Description**: Quick Sort's performance heavily depends on the choice of the pivot. A poor pivot (e.g., smallest or largest element) can lead to quadratic time complexity, while a good pivot (e.g., middle or random element) results in the average-case \( O(n \log\,n) \).
   
 ### 1. **First Element as Pivot**
    - **Description**: Choosing the first element as the pivot can result in the worst-case \( O(n^2) \) if the array is already sorted or in reverse.
@@ -255,7 +259,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   ```
 
 ### 2. **Random Pivot**
-   - **Description**: Choosing a random element as the pivot improves the chances of balanced partitions and typically leads to the average-case \( O(n \log n) \).
+   - **Description**: Choosing a random element as the pivot improves the chances of balanced partitions and typically leads to the average-case \( O(n \log\,n) \).
 
   ```javascript
   function quickSortRandomPivot(arr) {
@@ -268,7 +272,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ### 3. **Median of Three**
    - **Description**: The "median of three" method chooses the median of the first, middle, and last elements as the pivot, reducing the likelihood of worst-case scenarios.
@@ -308,7 +312,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ## O(n^k) - Polynomial Time
 - **Description**: The runtime is proportional to the size of the input raised to a power \( k \). Common in combinatorial algorithms.
@@ -326,7 +330,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   }
   ```
 
-[:top:](#)
+[:top:](#summary-table)
 
 ## O(n log k) - Efficient Search/Insert in Heaps
 - **Description**: Seen in algorithms that work with heaps or priority queues, where insertion and deletion are \( O(\log k) \), and \( n \) elements must be processed.
@@ -357,4 +361,4 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   // Example usage of a heap (O(n log k) for n elements with log(k) insertion)
   ```
 
-[:top:](#)
+[:top:](#summary-table)
