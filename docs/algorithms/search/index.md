@@ -7,9 +7,9 @@
 | Algorithm                                                      _Code </>_                                                | Time Complexity Best - Worst | Space Complexity      |  Data Structure  | Pros                                          | Cons                                                  |
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------------|-----------------------|------------------|-----------------------------------------------|-------------------------------------------------------|
 | [**Linear Search**](#1-linear-search)                          [</> :arrow_heading_down:](./linearSearch.md#code-example)      | $O(1)$       - $O(n)$        | $O(1)$                | Array            | Simple, works on unsorted data                | Inefficient for large datasets                        |
-| [**Binary Search**](#2-binary-search)                          [</> :arrow_heading_down:](./binarySearch.md#code-example)      | $O(1)$       - $O(\log\,n)$   | $O(1)$ or $O(\log\,n)$ | Array (Sorted)   | Efficient for sorted data                     | Requires data to be sorted                            |
+| [**Binary Search**](#2-binary-search)                          [</> :arrow_heading_down:](./binarySearch.md#code-example)      | $O(1)$       - $O(\log\ n)$   | $O(1)$ or $O(\log\ n)$ | Array (Sorted)   | Efficient for sorted data                     | Requires data to be sorted                            |
 | [**Jump Search**](#3-jump-search)                              [</> :arrow_heading_down:](./jumpSearch.md#code-example)        | $O(\sqrt n)$ - $O(\sqrt n)$  | $O(1)$                | Array (Sorted)   | Faster than linear search for larger datasets | Less efficient than binary search on the same dataset |
-| [**Exponential Search**](#4-exponential-search)                [</> :arrow_heading_down:](./exponentialSearch.md#code-example) | $O(1)$       - $O(\log\,n)$   | $O(\log\,n)$           | Array (Sorted)   | Fast for elements near the start of array     | Requires sorted data                                  |
+| [**Exponential Search**](#4-exponential-search)                [</> :arrow_heading_down:](./exponentialSearch.md#code-example) | $O(1)$       - $O(\log\ n)$   | $O(\log\ n)$           | Array (Sorted)   | Fast for elements near the start of array     | Requires sorted data                                  |
 | [**Interpolation Search**](#5-interpolation-search)                                                                            | $O(1)$       - $O(n)$        | $O(1)$                | Array (Sorted)   | Efficient with uniformly distributed data     | Performs poorly with non-uniform data                 |
 | [**DFS (Depth-First Search)**](#6-depth-first-search-dfs)                                                                      | $O(V + E)$   - $O(V + E)$    | $O(V)$                | Graph            | Memory efficient, finds deeper solutions      | Can get stuck in deep branches                        |
 | [**BFS (Breadth-First Search)**](#7-breadth-first-search-bfs)                                                                  | $O(V + E)$   - $O(V + E)$    | $O(V)$                | Graph            | Finds shortest path in unweighted graphs      | High memory usage for wide graphs                     |
@@ -47,8 +47,8 @@
 - **Description**: Efficient search algorithm that works on sorted arrays by repeatedly dividing the search interval in half.
 - **Time Complexity**: 
   - Best: $O(1)$
-  - Worst: $O(\log\,n)$
-- **Space Complexity**: $O(1)$ (Iterative) or $O(\log\,n)$ (Recursive)
+  - Worst: $O(\log\ n)$
+- **Space Complexity**: $O(1)$ (Iterative) or $O(\log\ n)$ (Recursive)
 - **Pros**: Very efficient for large, sorted datasets.
 - **Cons**: Requires data to be sorted.
 
@@ -77,8 +77,8 @@
 - **Description**: Finds range where an element may exist, and then uses binary search to find the element within the range.
 - **Time Complexity**: 
   - Best: $O(1)$
-  - Worst: $O(\log\,n)$
-- **Space Complexity**: $O(\log\,n)$
+  - Worst: $O(\log\ n)$
+- **Space Complexity**: $O(\log\ n)$
 - **Pros**: Efficient when the element is near the start of the array.
 - **Cons**: Requires sorted data.
 

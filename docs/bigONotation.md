@@ -9,9 +9,9 @@ Big O notation describes the time complexity of an algorithm, indicating how its
 | Notation      | Name                                                               | Description                                    | Example Algorithm       |
 |-------------  |--------------------------------------------------------------------|------------------------------------------------|-------------------------|
 | $O(1)$          | [Constant Time](#constant-time---o1)                               | Time remains the same regardless of input size                             | Array access            |
-| $O(\log\,n)$      | [Logarithmic Time](#logarithmic-time---olog-n)                     | Time grows logarithmically with input size                                 | Binary search           |
+| $O(\log\ n)$      | [Logarithmic Time](#logarithmic-time---olog-n)                     | Time grows logarithmically with input size                                 | Binary search           |
 | $O(n)$          | [Linear Time](#linear-time---on)                                   | Time grows linearly with input size                                        | Traversing an array     |
-| $O(n \log\,n)$    | [Linearithmic Time](#logarithmic-time---olog-n)                    | Time grows faster than O(n) but slower than O(n^2)                         | Merge sort, quicksort   |
+| $O(n \log\ n)$    | [Linearithmic Time](#logarithmic-time---olog-n)                    | Time grows faster than O(n) but slower than O(n^2)                         | Merge sort, quicksort   |
 | $O(n^2)$        | [Quadratic Time](#quadratic-time---on2)                            | Time grows quadratically with input size                                   | Bubble sort             |
 | $O(n^3)$        | [Cubic Time](#cubic-time---on3)                                    | Time grows cubically with input size                                       | Triple nested loops     |
 | $O(2^n)$        | [Exponential Time](#exponential-time---o2n)                        | Time doubles with each additional input                                    | Recursive algorithms    |
@@ -20,7 +20,7 @@ Big O notation describes the time complexity of an algorithm, indicating how its
 | $O(1)$ Amortized| [Amortized Constant Time](#amortized-time---o1-amortized)          | Rare operations take longer, but average is constant                       | Dynamic Arrays          |
 | $O(n^2 / 2)$    | [Reduced Quadratic Time](#reduced-quadratic-time---on2--2)         | Similar to \( O(n^2) \), but processes half of comparisons                 | Finding pairs           |
 | $O(n + m)$      | [Dependent on Two Inputs](#dependent-on-two-inputs---on--m)        | Time depends on two independent factors \( n \) and \( m \)                | Merging sorted arrays   |
-| $O(n\,\log\,k)$    | [Logarithmic Search/Insert](#logarithmic-time---olog-n)            | Time grows as the number of operations with \( \log(k) \) inserts/deletes  | Heaps, Priority Queues   |
+| $O(n\ \log\ k)$    | [Logarithmic Search/Insert](#logarithmic-time---olog-n)            | Time grows as the number of operations with \( \log(k) \) inserts/deletes  | Heaps, Priority Queues   |
 
 #### :bookmark: ***Notes on meaning of growth***
 
@@ -28,7 +28,7 @@ When we say "runtime grows" in the context of time complexity, we are referring 
 
 Here’s a breakdown:
 
-- **If the runtime grows slowly (e.g., $O(\log\,n)$):** The algorithm becomes **slightly slower** as the input size increases, but the increase in time is relatively small compared to the size of \( n \).
+- **If the runtime grows slowly (e.g., $O(\log\ n)$):** The algorithm becomes **slightly slower** as the input size increases, but the increase in time is relatively small compared to the size of \( n \).
   
 - **If the runtime grows quickly (e.g., $O(n^2)$ or $O(2^n)$):** The algorithm becomes **much slower** as the input size increases, because the time required increases at a much faster rate as \( n \) grows.
 
@@ -243,7 +243,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
 [:top:](#summary-table)
 
 ## Pivot Choice in Quick Sort (O(n log n) Best, O(n^2) Worst)
-- **Description**: Quick Sort's performance heavily depends on the choice of the pivot. A poor pivot (e.g., smallest or largest element) can lead to quadratic time complexity, while a good pivot (e.g., middle or random element) results in the average-case \( O(n \log\,n) \).
+- **Description**: Quick Sort's performance heavily depends on the choice of the pivot. A poor pivot (e.g., smallest or largest element) can lead to quadratic time complexity, while a good pivot (e.g., middle or random element) results in the average-case \( O(n \log\ n) \).
   
 ### 1. **First Element as Pivot**
    - **Description**: Choosing the first element as the pivot can result in the worst-case \( O(n^2) \) if the array is already sorted or in reverse.
@@ -259,7 +259,7 @@ In summary, "runtime grows" refers to how the **execution time** of an algorithm
   ```
 
 ### 2. **Random Pivot**
-   - **Description**: Choosing a random element as the pivot improves the chances of balanced partitions and typically leads to the average-case \( O(n \log\,n) \).
+   - **Description**: Choosing a random element as the pivot improves the chances of balanced partitions and typically leads to the average-case \( O(n \log\ n) \).
 
   ```javascript
   function quickSortRandomPivot(arr) {
