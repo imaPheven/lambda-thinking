@@ -116,7 +116,7 @@
 
 [:top:](#search-algorithms-summary-table)
 
-## 8. **A* Search**
+## 8. **A\* Search**
 - **Description**: An informed search algorithm that uses a heuristic to find the shortest path.
 - **Time Complexity**: $O(E)$, where E is the number of edges.
 - **Space Complexity**: $O(V)$
