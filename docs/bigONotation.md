@@ -11,7 +11,7 @@ Big O notation describes the time complexity of an algorithm, indicating how its
 | $O(1)$          | [Constant Time](#constant-time---o1)                               | Time remains the same regardless of input size                             | Array access            |
 | $O(\log\ n)$      | [Logarithmic Time](#logarithmic-time---olog-n)                     | Time grows logarithmically with input size                                 | Binary search           |
 | $O(n)$          | [Linear Time](#linear-time---on)                                   | Time grows linearly with input size                                        | Traversing an array     |
-| $O(n \log\ n)$    | [Linearithmic Time](#logarithmic-time---olog-n)                    | Time grows faster than O(n) but slower than O(n^2)                         | Merge sort, quicksort   |
+| $O(n\ \log\ n)$    | [Linearithmic Time](#logarithmic-time---olog-n)                    | Time grows faster than O(n) but slower than O(n^2)                         | Merge sort, quicksort   |
 | $O(n^2)$        | [Quadratic Time](#quadratic-time---on2)                            | Time grows quadratically with input size                                   | Bubble sort             |
 | $O(n^3)$        | [Cubic Time](#cubic-time---on3)                                    | Time grows cubically with input size                                       | Triple nested loops     |
 | $O(2^n)$        | [Exponential Time](#exponential-time---o2n)                        | Time doubles with each additional input                                    | Recursive algorithms    |
@@ -28,9 +28,9 @@ When we say "runtime grows" in the context of time complexity, we are referring 
 
 Here’s a breakdown:
 
-- **If the runtime grows slowly (e.g., $O(\log\ n)$):** The algorithm becomes **slightly slower** as the input size increases, but the increase in time is relatively small compared to the size of \( n \).
+- **If the runtime grows slowly (e.g., $`O(\log\ n)`$):** The algorithm becomes **slightly slower** as the input size increases, but the increase in time is relatively small compared to the size of \( n \).
   
-- **If the runtime grows quickly (e.g., $O(n^2)$ or $O(2^n)$):** The algorithm becomes **much slower** as the input size increases, because the time required increases at a much faster rate as \( n \) grows.
+- **If the runtime grows quickly (e.g., $`O(n^2)`$ or $`O(2^n)`$):** The algorithm becomes **much slower** as the input size increases, because the time required increases at a much faster rate as \( n \) grows.
 
 In summary, "runtime grows" refers to how the **execution time** of an algorithm changes in relation to the size of the input, and larger input sizes usually lead to longer execution times.
 
